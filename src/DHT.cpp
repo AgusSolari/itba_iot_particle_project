@@ -32,7 +32,7 @@ void readAndSendDHTData() {
     if (humidityDelta > 0 || temperatureDelta > 0) {
       HUMIDITY = humidity;
       TEMPERATURE = temperature;
-      Serial.printf("Humidity: %f%%. Temperature: %f*C.\n", humidity, temperature);
+      Serial.printf("Humidity: %f%%. Temperature: %f*C.\n", humidity, temperature);  
       sendDHTData();
     }
   }

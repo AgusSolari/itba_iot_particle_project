@@ -34,6 +34,7 @@ void DSM501A_ReadData() {
     lowpulseoccupancy = 0;
 
     Serial.printf("Concentration = %f pcs/m3 \n", concentration);
+    sendDSM501AData();
   }
 
 }
